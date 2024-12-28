@@ -1,108 +1,169 @@
-/* General styling */
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Header styling */
 header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-h1 {
+header h1 {
     margin: 0;
+    font-size: 2.5rem;
 }
 
+/* Section styling */
 section {
-    padding: 20px;
-    margin: 20px;
-}
-
-/* Farm Data Section */
-.farm-data {
-    display: flex;
-    justify-content: space-between;
-}
-
-.farm-data-card {
-    background-color: #ffffff;
+    padding: 30px 20px;
+    margin: 20px auto;
+    max-width: 1100px;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.farm-data-card h3 {
+/* Section titles */
+section h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Paragraphs */
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+}
+
+ul li ul {
+    padding-left: 20px;
+}
+
+ul li ul li {
+    font-size: 1rem;
+}
+
+/* Specific list item styles */
+ul li strong {
     color: #4CAF50;
 }
 
-.farm-data-card ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.farm-data-card li {
-    margin: 5px 0;
-}
-
-/* Marketplace Section */
-.marketplace {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.product {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    width: 30%;
-    text-align: center;
-}
-
-.product h3 {
-    color: #FF5722;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-/* Search and Filter Section */
-.search-filter {
-    margin-top: 20px;
-    text-align: center;
-}
-
-#price-filter {
-    padding: 8px;
-    width: 100px;
-    margin-right: 10px;
-}
-
-/* Footer Styling */
+/* Footer styling */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    margin-top: 40px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 footer p {
     margin: 0;
+    font-size: 1rem;
+}
+
+/* Portable tools section */
+#portable-tools, #portable-tools-marketplace {
+    background-color: #e8f5e9;
+    border-left: 5px solid #4CAF50;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+#portable-tools h3::before {
+    content: "🔧 ";
+    font-size: 1.2rem;
+}
+
+#portable-tools-marketplace h3::before {
+    content: "💼 ";
+    font-size: 1.2rem;
+}
+
+/* Farmer Marketplace specific styling */
+#farmer-marketplace {
+    background-color: #fff3e0;
+    border-left: 5px solid #ff7043;
+    padding-left: 20px;
+}
+
+#farmer-marketplace h3::before {
+    content: "🌾 ";
+    font-size: 1.2rem;
+}
+
+/* Links Styling */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #388e3c;
+    text-decoration: underline;
+}
+
+/* Emoji enhancements for section headings */
+section h2::before {
+    content: "🌱 ";
+    font-size: 1.5rem;
+}
+
+section h3::before {
+    content: "📊 ";
+    font-size: 1.5rem;
+}
+
+/* Section titles for farmer marketplace */
+#farmer-marketplace h3::after {
+    content: "💰";
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
 }
