@@ -6,51 +6,52 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9fafb;
+    background-color: #f4f4f9;
     color: #333;
     padding: 20px;
-    font-size: 1rem;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 3rem;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
     color: #4CAF50;
-    font-weight: bold;
 }
 
 h2 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #4CAF50;
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: #4CAF50;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #4CAF50;
+    margin-bottom: 10px;
 }
 
 h4 {
     font-size: 1.25rem;
-    color: #555;
+    color: #333;
     margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
     margin-bottom: 15px;
 }
 
-/* Body text styling */
+li {
+    margin-bottom: 10px;
+}
+
 p {
     font-size: 1rem;
     color: #555;
     margin-bottom: 20px;
-    line-height: 1.8;
 }
 
 /* Container and Sections */
@@ -66,54 +67,30 @@ section.business-case {
 
 .case {
     background-color: #fff;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.case:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 20px;
+    padding: 20px;
     margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-li {
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-    padding-left: 20px;
-    position: relative;
-}
-
-li::before {
-    content: "🌿";
-    position: absolute;
-    left: 0;
-    font-size: 1.3rem;
-    color: #4CAF50;
+.case ul {
+    margin-left: 20px;
 }
 
 /* Specific Styling for the List of Business Cases */
+ul {
+    margin-left: 20px;
+}
+
 ul li {
     font-size: 1.1rem;
-    margin: 12px 0;
+    margin: 10px 0;
     padding-left: 10px;
 }
 
 ul li::before {
-    content: "🔹";  /* Using emojis as bullet points */
+    content: "🔹";
     margin-right: 10px;
-    font-size: 1.4rem;
-}
-
-h2, h3, h4 {
-    color: #4CAF50;
 }
 
 /* Footer Styling */
@@ -123,7 +100,6 @@ footer {
     padding: 20px 0;
     background-color: #333;
     color: #fff;
-    border-radius: 8px;
 }
 
 footer p {
@@ -141,7 +117,7 @@ footer p {
     }
 
     h3 {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
     }
 
     h4 {
@@ -149,12 +125,6 @@ footer p {
     }
 
     .container {
-        padding: 0 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .case {
-        padding: 15px;
+        padding: 0 10px;
     }
 }
