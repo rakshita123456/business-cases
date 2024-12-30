@@ -65,6 +65,16 @@
                     <li><strong>Weather Data:</strong> Key: Date or time stamp. Value: Recorded weather parameters (e.g., rainfall, temperature).</li>
                     <li><strong>Market Data and Pricing:</strong> Key: Crop type or market name. Value: Current prices, historical price trends, and demand forecasts.</li>
                 </ul>
+                <h1>Reasons for Using Hash Table in Farm Data Management</h1>
+    
+    <div class="container">
+        <ul>
+            <li><strong>Fast Lookup (<span class="highlight">O(1)</span> Average Case):</strong> Provides quick access to farm data by using unique keys (like farm names or IDs), ensuring efficient searches even with large datasets.</li>
+            <li><strong>Efficient Insertion and Deletion (<span class="highlight">O(1)</span> Average Case):</strong> Inserting or deleting farm data is fast since hash tables don't require reordering elements, making it ideal for dynamic data.</li>
+            <li><strong>Scalability:</strong> Hash tables handle large datasets efficiently without significant performance degradation, making them well-suited for growing farm data.</li>
+            <li><strong>Collision Handling:</strong> Hash tables can handle collisions (when two farms hash to the same slot) effectively using methods like chaining or open addressing, ensuring data consistency.</li>
+        </ul>
+    </div>
 
                 <h4>Mapping to SDG Targets:</h4>
                 <ul>
@@ -106,6 +116,38 @@
                         </ul>
                     </li>
                 </ul>
+                 <div class="container">
+        <h1>Farmer Marketplace: Reasons for Using Arrays and Stacks</h1>
+
+        <div class="section">
+            <h2>Reasons for Using Arrays:</h2>
+            <ul>
+                <li><strong>Fixed Size and Simple Data Structure:</strong> Arrays offer a simple structure to store a collection of products that have a fixed size.</li>
+                <li><strong>Efficient Access by Index:</strong> Arrays allow fast access to individual elements by their index, making it easy to retrieve or update product details.</li>
+                <li><strong>Memory Efficiency:</strong> Arrays are memory-efficient, especially when the number of products is fixed and dynamic resizing is not required.</li>
+                <li><strong>Ease of Implementation:</strong> Arrays are simple to implement with minimal overhead compared to more complex data structures.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Reasons for Using Stacks:</h2>
+            <ul>
+                <li><strong>Undo/Redo Operations:</strong> Stacks are ideal for implementing undo and redo functionality, making it easy to revert the last action.</li>
+                <li><strong>Last In, First Out (LIFO) Behavior:</strong> Stacks follow the LIFO principle, which fits well for reversing recent actions such as adding or removing products.</li>
+                <li><strong>Temporary Storage:</strong> Stacks can store temporary states of the marketplace, which helps handle operations like adding and removing products in sequence.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Overall Benefits:</h2>
+            <ul>
+                <li><strong>Speed and Efficiency:</strong> Arrays provide quick access to product data, while stacks allow easy handling of undo/redo operations.</li>
+                <li><strong>Simplicity and Low Complexity:</strong> Both arrays and stacks are simple to implement, making them a good choice for small to medium-sized marketplaces.</li>
+            </ul>
+        </div>
+
+        
+    </div>
 
                 <h4>Mapping to SDG Targets:</h4>
                 <ul>
