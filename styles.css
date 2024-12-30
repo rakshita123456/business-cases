@@ -17,7 +17,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 2.5rem; /* Slightly reduced size */
+    font-size: 2rem; /* Reduced font size to match other headings */
     color: #4CAF50;
     font-weight: bold;
 }
@@ -142,7 +142,7 @@ footer p {
 /* Responsive Design */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Adjust font size for mobile */
     }
 
     h2 {
